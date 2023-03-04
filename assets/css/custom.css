@@ -1,0 +1,25 @@
+/*
+Custom Css
+*/
+
+
+.font1{
+font-family: 'nasalization';
+}
+.font2{
+    font-family: 'FF Dusha Arabic';
+}
+
+.simple{
+    color:#58cbb3;
+}
+
+
+.image{
+    width: 100%;
+
+}
+
+.bt{
+margin-right: 15px;    
+}

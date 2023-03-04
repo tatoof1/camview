@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CARRI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/logo.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- icons link-->
+    <script src="https://kit.fontawesome.com/d087d47be6.js" crossorigin="anonymous"></script>
+    <!--
+    
+
+-->
+</head>
+
+<body>
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="https://mail.google.com/">youcefalgeria34@gmail.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:0673994147">0673994147</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://fb.com" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class=" font1 navbar-brand  logo h1 align-self-center text-success" href="index.html">
+                CARRI
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class=" nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link font2" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font2" href="about.html">حول</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font2" href="shop.html">العروض الخاصة بكم </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font2" href="contact.html">تواصلوا معنا</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <button type="button" class=" font2 btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">فتح حساب</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title  font2" id="exampleModalLabel">فتح حساب</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="enterusername" class="form-label font2" >اسم المستخدم  </label>
+                                          <input type="text" class="form-control" id="usernamesiginup" aria-describedby="emailHelp">
+                                          
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="enteremail" class="form-label font2"> الايمايل الالكتروني او رقم الهاتف </label>
+                                          <input type="email" class="form-control" id="enteremail" aria-describedby="emailHelp">
+                                          <div id="emailHelp" class="form-text font2">لن يتم مشاركة الايمايل الخاص بك او رقم الهاتف </div>
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="enterpassword1" class="form-label font2">كلمة السر </label>
+                                          <input type="password" class="form-control" id="enterpassword1">
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="enterpassword2" class="form-label font2"> تاكيد كلمة السر </label>
+                                          <input type="password" class="form-control" id="enterpassword2">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label font2" for="exampleCheck1">تذكرني</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-success font2" id="signupbutton">فتح</button>
+                                      </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-success font2" data-bs-dismiss="modal">خروج</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </a> 
+
+
+                    <!-- buttons separation-->
+
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <button type="button" class=" font2 btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#example">تسجيل الدخول</button>
+                        <div class="modal fade" id="example" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title  font2" id="exampleModalLabel">تسجيل الدخول</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                          <label for="loginEmail" class="form-label font2">الايمايل الالكتروني </label>
+                                          <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                                          <div id="emailHelp" class="form-text font2">لن يتم مشاركة الايمايل الخاص بك</div>
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="exampleInputPassword1" class="form-label font2">كلمة السر </label>
+                                          <input type="password" class="form-control" id="enterpassword">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label font2" for="exampleCheck1">تذكرني</label>
+                                        </div>
+                                        <button type="submit" id="loginButton" class="btn btn-success font2">دخول</button>
+                                      </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-success font2" data-bs-dismiss="modal">خروج</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </a>
+                    
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Start Banner Hero -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./imgs/car1.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="font1 h1 text-success">CARRI</h1>
+                                <h3 class="h2 font2">لبيع و شراء وتبادل السيارات</h3>
+                                <p class="font2">
+                                 كاري هو اول موقع جزائري فريد من نوعه يتخصص في عرض السيارات لبيعها و شرائها و تبادلها 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./imgs/engine.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1 font2">طريقة عمل الموقع </h1>
+                                <h3 class="h2 font2 simple ">البساطة و سهولة التعامل هي مميزات موقعنا</h3>
+                                <p class="font2">
+                                 فقط يكفي فتح حساب و  و القيام بعرض سيارتك للبيع او تصفح عروض الاخرين للبحث عن سيارتك المستقبلية 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="./imgs/bike.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1 font2 simple">تعدد الخيارات </h1>
+                                <h3 class="h2 font2">و ذلك لسهولة البحث </h3>
+                                <p class="font2">
+                                حيث تم تصميم الموقع لكي يتوافق مع كامل الفئات الموجودة و المتمثلة في الدراجات النارية السيارات و الشاحنات                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+    <!-- End Banner Hero -->
+
+
+    <!-- Start Categories of The Month -->
+    <section class="container py-5">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1 font2">الفئات الموجودة</h1>
+            <p class="font2"> 
+                يوجد 3 فئات رئيسية للاختيار منها و المتمثلة في السيارات و الدراجات النارية و الشاحنات
+            </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="./imgs/byckle-0101.png" class="rounded-circle img-fluid border"></a>
+                <h5 class="text-center mt-3 mb-3 font2 fs-1 simple">دراجات نارية</h5>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="./imgs/car-01.png" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3 font2 fs-1 simple">سيارات</h2>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="./imgs/truck-0101.png" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3 font2 fs-1 simple">شاحنات</h2>
+            </div>
+        </div>
+    </section>
+    <!-- End Categories of The Month -->
+
+
+    <!-- Start Featured Product -->
+    <section class="bg-light">
+        <div class="container py-5">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1 font2 simple ">العروض الخاصة بكم</h1>
+                    <p class="font2">
+                     عينة من العروض الخاصة بكم الاكثر مشاهدة                      
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        
+                            <img src="./imgs/shopimages/1_rifter.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="font1 text-right simple">8.000.000 DA</li>
+                            </ul>
+                            <a  class="h2 text-decoration-none text-dark font1  ">RIFTER 2021</a>
+                            <p class="card-text ">
+                                rifter 2021 ll bi3
+                            </p>
+                            <i class="fas fa-gas-pump center d-flex justify-content-center fs-5"></i>  
+                            <p class="text-center fs-4 font1 simple"> Essence</p>
+                            <br>
+                            <i class="fa-solid fa-gauge-high fs-5 d-flex justify-content-center" ></i>
+                            <p class="text-center fs-4 font1 simple"> 10.000 KM</p>
+                            <br>
+                            <i class="fa-solid fa-location-dot fs-5 d-flex justify-content-center"></i>
+                            <p class="text-center fs-4 font1 simple"> oran</p>
+                            <p class="text-muted  font2">25 تعليق</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                            <img src="./imgs/shopimages/2_sprinter.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="font1 text-right simple">9.000.000 DA</li>
+                            </ul>
+                            <a  class="h2 text-decoration-none text-dark font1">Mercedes Sprinter 2022</a>
+                            <p class="card-text">
+                                sprinter 2022 ll bi3 jdid                            
+                            </p>
+                            <i class="fas fa-gas-pump center d-flex justify-content-center fs-5"></i>  
+                            <p class="text-center fs-4 font1 simple"> Mazout</p>
+                            <br>
+                            <i class="fa-solid fa-gauge-high fs-5 d-flex justify-content-center" ></i>
+                            <p class="text-center fs-4 font1 simple"> 5.000 KM</p>
+                            <br>
+                            <i class="fa-solid fa-location-dot fs-5 d-flex justify-content-center"></i>
+                            <p class="text-center fs-4 font1 simple"> Alger</p>
+                            <p class="text-muted font2">31 تعليق</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                            <img src="./imgs/shopimages/3_z1000.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="font1 text-right simple">4.000.000 DA</li>
+                            </ul>
+                            <a  class="h2 text-decoration-none text-dark font1 ">Kawasaki Z1000 2021</a>
+                            <p class="card-text">
+                            Kawassaki jdida llbi3 macha 100000 km brk 
+                        </p>
+                       
+                        <i class="fas fa-gas-pump center d-flex justify-content-center fs-5"></i>  
+                        <p class="text-center fs-4 font1 simple"> Essence</p>
+                        <br>
+                        <i class="fa-solid fa-gauge-high fs-5 d-flex justify-content-center" ></i>
+                        <p class="text-center fs-4 font1 simple"> 1.000 KM</p>
+                        <br>
+                        <i class="fa-solid fa-location-dot fs-5 d-flex justify-content-center"></i>
+                        <p class="text-center fs-4 font1 simple"> Mssila</p>
+
+
+
+                            <p class="text-muted font2">   20 تعليق </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Featured Product -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo font1">CA RRI</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Bordj Bou Arreridj - Algeria
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">+213673994147</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">youcefalgeria34@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light font2">عروضنا</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none font2" href="#">سيارات </a></li>
+                        <li><a class="text-decoration-none font2" href="#">شاحنات</a></li>
+                        <li><a class="text-decoration-none font2" href="#">دراجات نارية</a></li>
+     
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light font2">معلومات اضافية</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none font2" href="#">الرئيسية</a></li>
+                        <li><a class="text-decoration-none font2" href="#">حول</a></li>
+                        <li><a class="text-decoration-none font2" href="#">موقعنا </a></li>
+                        <li><a class="text-decoration-none font2" href="#">الاسئلة الشائعة</a></li>
+                        <li><a class="text-decoration-none font2" href="#">تواصلوا معنا</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">الايمايل الالكتروني</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light  " id="subscribeEmail" placeholder="الايمايل الالكتروني">
+                        <div class="input-group-text btn-success text-light font2">اشتراك</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2021 CARRI 
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="assets/js/ui/login.js" type="module"></script>
+    <script src="assets/js/ui/signup.js " type="module"></script>
+    
+    <!-- End Script -->
+</body>
+
+</html>
