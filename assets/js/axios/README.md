@@ -387,7 +387,7 @@ These are the available config options for making requests. Only the `url` is re
   // `xsrfCookieName` is the name of the cookie to use as a value for xsrf token
   xsrfCookieName: 'XSRF-TOKEN', // default
 
-  // `xsrfHeaderName` is the name of the http header that carries the xsrf token value
+  // `xsrfHeaderName` is the name of the http header that Camerties the xsrf token value
   xsrfHeaderName: 'X-XSRF-TOKEN', // default
 
   // `onUploadProgress` allows handling of progress events for uploads

@@ -4,15 +4,15 @@ let connection
 function connect(){
     connection =  Database('./database/sqlite.db')   
     
-    const createCarsTable = connection.prepare("CREATE TABLE IF NOT EXISTS Cars (\n"
-        + "	Car_id Integer PRIMARY KEY AUTOINCREMENT,\n"
-        + "	Car_Name text ,\n"
+    const createCarsTable = connection.prepare("CREATE TABLE IF NOT EXISTS Cams (\n"
+        + "	Cam_id Integer PRIMARY KEY AUTOINCREMENT,\n"
+        + "	Max_Fps text ,\n"
         + "	Picutres text ,\n"
-        + " Brand text,\n"
-        + " Phone_Number text,\n"
-        + " Distance text,\n"
-        + " Engine text,\n"
-        + " State text "
+        + " Model text,\n"
+        + " Release_Date text,\n"
+        + " Sensor text,\n"
+        + " Dimensions text,\n"
+        + " Weight text "
         + ")")
 
         createCarsTable.run()
@@ -32,9 +32,9 @@ async function registerUser(email ,password ,username){
     registerUser.run(email,password,username)
 }
 
-async function addCar(name,brand,distance,phoneNumber,state,engine,pictures){
-    const insertCar = connection.prepare("INSERT INTO CARS (Car_Name,Brand,Distance,Phone_Number,State,Engine,Pictures) VALUES(?,?,?,?,?,?,?)")
-    insertCar.run(name,brand,distance,phoneNumber,state,engine,pictures)
+async function addCam(fps,pictures,model,releaseDate,sensor,dimensions,weight){
+    const insertCar = connection.prepare("INSERT INTO Cams (Max_Fps,Picutres,Model,Release_Date,Sensor,Dimensions,Weight) VALUES(?,?,?,?,?,?,?)")
+    insertCar.run(fps,pictures,model,releaseDate,sensor,dimensions,weight,)
     
 }
 
@@ -49,24 +49,14 @@ async function login(email,password) {
     return result["password"] === password
     
 }
-/* 
-    0:car0
-    1:car1
-    Offset = step mnin nbda , offset = 5 
-    Limit = 3
-    4:car4
-    5:car5
-    6:car6
-    result = [car4,car5,car6]
-    ...etc
-*/
 
-async function fetchCar(startIndex , maxLimit){
-    const selectCar = connection.prepare("Select * From CARS LIMIT ? OFFSET ?")
-    const cars =  selectCar.all(maxLimit , startIndex)
-    console.log(cars)
-    return cars
+
+async function fetchCam(startIndex , maxLimit){
+    const selectCam = connection.prepare("Select * From Cams LIMIT ? OFFSET ?")
+    const cams =  selectCam.all(maxLimit , startIndex)
+    console.log(cams)
+    return cams
 }
 
 
-module.exports= {fetchCar , login , addCar ,registerUser ,connect};
+module.exports= {fetchCam: fetchCam , login , addCam: addCam ,registerUser ,connect};

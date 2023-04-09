@@ -34,21 +34,20 @@ app.get('/Login', function (req, res) {
       })
 })
 
-app.post('/RegsiterCar', function (req, res) {
+app.post('/RegsiterCam', function (req, res) {
 
-    const carname = req.body.name
-    const carbrand = req.body.brand
-    const phoneNumber = req.body.phoneNumber
-    const distance = req.body.distance
-    const state = req.body.state
+    const fps = req.body.fps
     const pictures = req.body.pictures
-    const engine = req.body.engine
-    
+    const model = req.body.model
+    const releaseDate = req.body.releaseDate
+    const sensor = req.body.sensor
+    const dimensions = req.body.dimensions
+    const weight = req.body.weight
 
-    database.addCar(carname,carbrand,distance,phoneNumber,state,engine,pictures)
+    database.addCam(fps,pictures,model,releaseDate,sensor,dimensions,weight)
     .then((response)=> {
         console.log({
-         carname:carname, carbrand:carbrand , distance:distance , phoneNumber:phoneNumber, state:state , engine:engine, pictures:pictures   
+         cammodel:fps, fps:pictures , sensor:releaseDate , releaseDate:releaseDate, state:sensor , engine:fps, pictures:pictures   
         })
         res.json({response})
     })
@@ -75,14 +74,14 @@ app.post('/RegsiterUser', function (req, res) {
     })
 })
 
-app.get('/FetchCar', function (req, res) {
+app.get('/FetchCam', function (req, res) {
     
     const start  = req.query.start
     const productCount = req.query.productCount
    
-    database.fetchCar(start , productCount).then((carsArray)=>{
+    database.fetchCam(start , productCount).then((camsArray)=>{
         
-            res.json({response:carsArray})
+            res.json({response:camsArray})
       })
       .catch(e=>{
         console.log(e)

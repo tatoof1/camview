@@ -22,18 +22,16 @@ function registerUser(email ,password ,username){
             console.log("An error occured")
         })
 }
-
-function addCar(name,brand,distance,phoneNumber,state,engine,pictures){
-    const register_car_api = serverUrl + "RegsiterCar"
-
-
+function addCam(fps,model,releaseDate,sensor,weight,dimensions,pictures){
+    const register_car_api = serverUrl + "RegsiterCam"
+    
     axios.post(register_car_api,
         {
-            name:name , brand:brand , distance:distance , phoneNumber:phoneNumber , state:state , engine:engine
+            fps:fps , model:model , dimensions:dimensions , releaseDate:releaseDate , sensor:sensor , weight:weight
             ,pictures:pictures
         })
         .then(
-            (value) => {console.log("RegistredCar")}
+            (value) => {console.log("RegistredCam")}
         )
         .catch(
             (error) => {console.log("Failed")}
@@ -65,8 +63,8 @@ function login(email,password){
         
 }
 
-function fetchCar(pageNumber,renderProducts){
-    const fetch_car_api = serverUrl + "FetchCar"
+function fetchCam(pageNumber,renderProducts){
+    const fetch_car_api = serverUrl + "FetchCam"
     const productCount = 3
     
     const start = pageNumber - 1 
@@ -88,4 +86,4 @@ function fetchCar(pageNumber,renderProducts){
         })
 }
 
-export default {login,fetchCar,addCar,registerUser}
+export default {login,fetchCam: fetchCam,addCam: addCam,registerUser}
