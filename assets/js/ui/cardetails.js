@@ -17,19 +17,18 @@ console.log(values)
 }
 
 parseUrl()
-console.log(values)
 const cammodel = document.getElementById("cammodel")
 cammodel.innerText = values[0]
 const sensor = document.getElementById("sensor")
-sensor.innerText = values[1]
+sensor.innerText = `Sensor: ${values[1]}`
 // const weight = document.getElementById("weight")
 // weight.innerText = values[2]
 const releaseDate = document.getElementById("releasedate")
-releaseDate.innerText = values[3]
+releaseDate.innerText = `DateSortie: ${values[3]}`
 const fps = document.getElementById("fps")
-fps.innerText = values[4]
+fps.innerText = `Fps: ${values[4]}`
 const dimensions = document.getElementById("dimensions")
-dimensions.innerText = values[5]
+dimensions.innerText = `Dimension: ${values[5]}`
 const imgone = document.getElementById("img1")
 imgone.src = values[6]
 const imgtwo = document.getElementById("img2")
