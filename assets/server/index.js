@@ -36,6 +36,8 @@ app.get('/Login', function (req, res) {
 
 app.post('/RegsiterCam', function (req, res) {
 
+    console.log(req.body)
+
     const fps = req.body.fps
     const pictures = req.body.pictures
     const model = req.body.model
@@ -58,7 +60,6 @@ app.post('/RegsiterCam', function (req, res) {
 })
 
 app.post('/RegsiterUser', function (req, res) {
-    console.log(req.body.options)
     const username = req.body.options.username
     const password = req.body.options.password
     const email = req.body.options.email
@@ -75,6 +76,7 @@ app.post('/RegsiterUser', function (req, res) {
 })
 
 app.get('/FetchCam', function (req, res) {
+
     
     const start  = req.query.start
     const productCount = req.query.productCount

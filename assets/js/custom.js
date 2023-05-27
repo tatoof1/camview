@@ -22,7 +22,11 @@ function registerUser(email ,password ,username){
             console.log("An error occured")
         })
 }
+
 function addCam(fps,model,releaseDate,sensor,weight,dimensions,pictures){
+
+    console.log("addCam")
+
     const register_car_api = serverUrl + "RegsiterCam"
     
     axios.post(register_car_api,
@@ -86,4 +90,4 @@ function fetchCam(pageNumber,renderProducts){
         })
 }
 
-export default {login,fetchCam: fetchCam,addCam: addCam,registerUser}
+export default {login,fetchCam, fetchCam,addCam, addCam,registerUser}

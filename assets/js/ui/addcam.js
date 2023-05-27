@@ -10,7 +10,6 @@ addCamButton.onclick = function (){
     let dimensions = document.getElementById("dimensions").value
     let releaseDate = document.getElementById("releasedate").value
     let pictures = document.getElementById("formFileMultiple").value
-    addCam(fps,model,releaseDate,sensor,weight,dimensions,pictures)
     helper.addCam(fps,cammodel,releaseDate,sensor,weight,dimensions,pictures)
     
 }
