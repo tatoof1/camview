@@ -106,16 +106,17 @@ function renderProductsCards(camsArray){
       card.appendChild(cardbody)
      
 
-       const a3 = htmlHelper ("a","h3 text-decoration-none font1")
-       a3.innerText = cam.Model
-       cardbody.appendChild(a3)
+      const pModel = htmlHelper("p", "text-center fs-4 font1 simple")
+      pModel.innerText = "Model"
+      cardbody.appendChild(pModel)
+
+      const model = htmlHelper("p", "text-center fs-4 font1 simple")
+      model.innerText = cam.Model
+      cardbody.appendChild(model)
+
 
        const ul2 = htmlHelper("ul","w-100 list-unstyled d-flex justify-content-between mb-0")
        cardbody.appendChild(ul2)
-
-       const li3 = htmlHelper("li")
-       li3.innerText = "Description"   
-       ul2.appendChild(li3)
 
        const li4 = htmlHelper("li","pt-2")
        ul2.appendChild(li4)
@@ -137,8 +138,10 @@ function renderProductsCards(camsArray){
        li4.appendChild(span5)
 
 
-       const i3 = htmlHelper("i", "fas fa-gas-pump center d-flex justify-content-center fs-5")
-       cardbody.appendChild(i3)
+
+       const pRelease = htmlHelper("p", "text-center fs-4 font1 simple")
+       pRelease.innerText = "Release Date"
+       cardbody.appendChild(pRelease)
 
        const p = htmlHelper("p", "text-center fs-4 font1 simple")
        p.innerText = cam.Release_Date
@@ -147,8 +150,10 @@ function renderProductsCards(camsArray){
        const br = htmlHelper("br")
        cardbody.appendChild(br)
         
-       const i4 = htmlHelper("i", "fa-solid fa-gauge-high fs-5 d-flex justify-content-center")
-       cardbody.appendChild(i4)
+
+       const pSensor = htmlHelper("p", "text-center fs-4 font1 simple")
+       pSensor.innerText = "Sensor"
+       cardbody.appendChild(pSensor)
 
        const p1 = htmlHelper("p", "fa-solid fs-5 d-flex justify-content-center") 
        p1.innerText = cam.Sensor
@@ -157,8 +162,9 @@ function renderProductsCards(camsArray){
        const br1 = htmlHelper("br")
        cardbody.appendChild(br1)
 
-       const i5 = htmlHelper ("i", "fa-solid fa-location-dot fs-5 d-flex justify-content-center")
-       cardbody.appendChild(i5)
+       const pDimensions = htmlHelper("p", "text-center fs-4 font1 simple")
+       pDimensions.innerText = "Dimensions"
+       cardbody.appendChild(pDimensions)
 
        const p2 = htmlHelper("p", "text-center fs-4 font1 simple") 
        p2.innerText = cam.Dimensions
@@ -169,27 +175,6 @@ function renderProductsCards(camsArray){
 
 
 
-      const li5 = htmlHelper("li")
-      ul3.appendChild(li5)
-
-      const i6 = htmlHelper("i","text-warning fa fa-star")
-      li5.appendChild(i6)
-
-      const i7 = htmlHelper("i","text-warning fa fa-star")
-      li5.appendChild(i7)
-
-      const i8 = htmlHelper("i","text-warning fa fa-star")
-      li5.appendChild(i8)
-
-      const i9 = htmlHelper("i","text-warning fa fa-star")
-      li5.appendChild(i9)
-      
-      const i10 = htmlHelper("i","text-muted fa fa-star")
-      li5.appendChild(i10)
-
-      const p3 = htmlHelper("p","text-center mb-0 font1 simple")
-      p3.innerText = "80000 DA"
-      cardbody.appendChild(p3)
 
 
      virtualRootHtml.appendChild(column)
